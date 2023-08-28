@@ -15,4 +15,9 @@ function loadEventListeners() {
 
 
 
+
 //Functions
+
+function buyCourse(e) {
+    console.log('Course added');
+}
