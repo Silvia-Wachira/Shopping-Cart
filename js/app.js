@@ -19,5 +19,8 @@ function loadEventListeners() {
 //Functions
 
 function buyCourse(e) {
-    console.log('Course added');
+    //use delegation to find the course that was added
+    if(e.target.classList.contains('add-to-cart')) {
+        console.log('Added')
+    }
 }
