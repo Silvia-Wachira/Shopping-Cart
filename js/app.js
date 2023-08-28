@@ -19,8 +19,14 @@ function loadEventListeners() {
 //Functions
 
 function buyCourse(e) {
+    e.preventDefault();
     //use delegation to find the course that was added
     if(e.target.classList.contains('add-to-cart')) {
-        console.log('Added')
+        //Read the course values
+        const course = e.target.parentElement.parentElement;
+
+        // read the values
+        getCourseInfo(course)
     }
 }
+//
