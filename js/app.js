@@ -1,4 +1,4 @@
-//variales
+//variabes
 const courses = document.querySelector('#courses-list')
 
 
@@ -29,4 +29,7 @@ function buyCourse(e) {
         getCourseInfo(course)
     }
 }
-//
+//Reads the HTML information of the selected course
+function getCourseInfo(course) {
+    console.log(course)
+}
