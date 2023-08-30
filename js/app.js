@@ -37,5 +37,17 @@ function getCourseInfo(course) {
          price: course.querySelector('.price span').textContent,
          id: course.querySelector('a').getAttribute('data-id')
     }
-    console.log(courseInfo)
+    //Insert into the shopping cart
+    addIntoCart(courseInfo)
+}
+//Display the selected course into the shopping cart
+
+function addIntoCart(course){
+    //Create a <tr>
+    const row = document.createElement('tr')
+
+    //Build the template
+    row.inner = `
+    
+    `
 }
