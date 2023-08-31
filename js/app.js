@@ -48,6 +48,12 @@ function addIntoCart(course){
 
     //Build the template
     row.innerHTML = `
+        <tr>
+            <td>
+                <img src="${course.image}">
+            </td>
+            
+        </tr>
 
     `;
 }
