@@ -52,7 +52,12 @@ function addIntoCart(course){
             <td>
                 <img src="${course.image}">
             </td>
-            
+            <td>${course.title}</td>
+            <td>${course.price}</td>
+            <td>
+                <a href="#" class="remove" data-id="${course.id}">X</a>
+            </td>
+
         </tr>
 
     `;
