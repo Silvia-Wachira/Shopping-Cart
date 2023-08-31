@@ -1,5 +1,6 @@
 //variabes
-const courses = document.querySelector('#courses-list')
+const courses = document.querySelector('#courses-list');
+      shoppingCartContent = document.querySelector('#cart-content tbody')
 
 
 
@@ -50,7 +51,7 @@ function addIntoCart(course){
     row.innerHTML = `
         <tr>
             <td>
-                <img src="${course.image}">
+                <img src="${course.image}" width=100px>
             </td>
             <td>${course.title}</td>
             <td>${course.price}</td>
@@ -61,4 +62,6 @@ function addIntoCart(course){
         </tr>
 
     `;
+    //Add into shopping cart
+    shoppingCartContent.appendChild(row);
 }
