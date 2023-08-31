@@ -47,7 +47,7 @@ function addIntoCart(course){
     const row = document.createElement('tr')
 
     //Build the template
-    row.inner = `
-    
-    `
+    row.innerHTML = `
+
+    `;
 }
