@@ -1,6 +1,7 @@
 //variabes
 const courses = document.querySelector('#courses-list');
-      shoppingCartContent = document.querySelector('#cart-content tbody')
+      shoppingCartContent = document.querySelector('#cart-content tbody'),
+      clearCartBtn = document.querySelector('#clear-cart');
 
 
 
@@ -14,6 +15,7 @@ function loadEventListeners() {
 
     //When the remove btn is clicked
     shoppingCartContent.addEventListener('click', removeCourse)
+    clearCartBtn.addEventListener('click', clearCart)
 }
 
 
