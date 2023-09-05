@@ -11,6 +11,9 @@ loadEventListeners()
 function loadEventListeners() {
     //when a new course is added
     courses.addEventListener('click',buyCourse)
+
+    //When the remove btn is clicked
+    shoppingCartContent.addEventListener('click', removeCourse)
 }
 
 
