@@ -68,3 +68,10 @@ function addIntoCart(course){
     //Add into shopping cart
     shoppingCartContent.appendChild(row);
 }
+
+//remove course from the dom
+function removeCourse(e) {
+    if(e.target.classList.contains('remove')){
+        
+    }
+}
