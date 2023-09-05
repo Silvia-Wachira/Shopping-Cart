@@ -73,7 +73,14 @@ function addIntoCart(course){
 
 //remove course from the dom
 function removeCourse(e) {
+
     if(e.target.classList.contains('remove')){
         e.target.parentElement.parentElement.remove();
     }
+}
+
+
+//clears the shopping cart
+function clearCart() {
+    shoppingCartContent.innerHTML = '';
 }
