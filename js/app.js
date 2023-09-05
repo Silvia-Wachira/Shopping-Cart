@@ -82,5 +82,9 @@ function removeCourse(e) {
 
 //clears the shopping cart
 function clearCart() {
-    shoppingCartContent.innerHTML = '';
+    // shoppingCartContent.innerHTML = '';
+
+    while(shoppingCartContent.firstChild) {
+        shoppingCartContent.removeChild(shoppingCartContent.firstChild)
+    }
 }
