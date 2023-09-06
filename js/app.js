@@ -77,7 +77,10 @@ function addIntoCart(course){
 //Add the courses into local storage
 
 function saveIntoStorage(course) {
+    let courses = getCoursesFromStorage()
 
+    //Add the course into the array
+    courses.push(course)
 }
 
 //Get the contents from storage
@@ -92,7 +95,7 @@ function getCoursesFromStorage() {
         course = JSON.parse(localStorage.getItem('courses'));
     }
     return courses;
-    
+
 }
 //remove course from the DOM
 function removeCourse(e) {
