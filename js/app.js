@@ -125,5 +125,25 @@ function clearCart() {
 function getFromLocalStorage() {
     let coursesLS = getCoursesFromStorage();
 
+    //Loop through the courses and print into the cart
+    coursesLS.forEach(function(course) {
+        //create the <tr>
+        const row = document.createElement('tr');
 
+        //Print the content
+        row.innerHTML = `
+        <tr>
+            <td>
+                <img src="${course.image}" width=100px>
+            </td>
+            <td>${course.title}</td>
+            <td>${course.price}</td>
+            <td>
+                <a href="#" class="remove" data-id="${course.id}">X</a>
+            </td>
+
+        </tr>
+
+    `;
+    });
 }
