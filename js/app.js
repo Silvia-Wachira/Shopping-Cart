@@ -15,12 +15,15 @@ function loadEventListeners() {
 
     //When the remove btn is clicked
     shoppingCartContent.addEventListener('click', removeCourse)
+
+        //Clear cart btn
     clearCartBtn.addEventListener('click', clearCart)
+
+       //Document Ready
+       document.addEventListener('DOMContentLoaded', getFromLocalStorage)
 }
+ 
 
-
-    //Document Ready
-    document.addEventListener('DOMContentLoaded', getFromLocalStorage)
 
 
 //Functions
@@ -141,9 +144,8 @@ function getFromLocalStorage() {
             <td>
                 <a href="#" class="remove" data-id="${course.id}">X</a>
             </td>
-
         </tr>
-
     `;
+        shoppingCartContent.appendChild(row);
     });
 }
