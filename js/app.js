@@ -81,6 +81,9 @@ function saveIntoStorage(course) {
 
     //Add the course into the array
     courses.push(course)
+
+    //since storage only saves strings, we need to convert JSON into string
+    localStorage.setItem('courses', JSON.stringify(courses));
 }
 
 //Get the contents from storage
