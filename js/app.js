@@ -69,9 +69,22 @@ function addIntoCart(course){
     `;
     //Add into shopping cart
     shoppingCartContent.appendChild(row);
+
+    //Add course into storage
+    saveIntoStorage(course)
 }
 
-//remove course from the dom
+//Add the courses into local storage
+
+function saveIntoStorage(course) {
+
+}
+
+//Get the contents from storage
+function getCoursesFromStorage() {
+    
+}
+//remove course from the DOM
 function removeCourse(e) {
 
     if(e.target.classList.contains('remove')){
