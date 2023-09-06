@@ -82,6 +82,16 @@ function saveIntoStorage(course) {
 
 //Get the contents from storage
 function getCoursesFromStorage() {
+
+    let courses;
+
+    //if something exists on storage then we getthe value, otherwise create an empty array
+    if(localStorage.getItem('courses') === null) {
+        courses = [];
+    } else {
+        course = JSON.parse(localStorage.getItem('courses'));
+    }
+    return courses;
     
 }
 //remove course from the DOM
