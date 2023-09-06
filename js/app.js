@@ -19,7 +19,8 @@ function loadEventListeners() {
 }
 
 
-
+    //Document Ready
+    document.addEventListener('DOMContentLoaded', getFromLocalStorage)
 
 
 //Functions
@@ -116,4 +117,11 @@ function clearCart() {
     while(shoppingCartContent.firstChild) {
         shoppingCartContent.removeChild(shoppingCartContent.firstChild)
     }
+}
+
+
+//Loads when document is ready and prints coursesinto shopping cart
+
+function getFromLocalStorage() {
+    
 }
