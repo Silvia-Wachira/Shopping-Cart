@@ -120,7 +120,7 @@ function clearCart() {
     }
 }
 
- //Loads when document is ready and prints coursesinto shopping c art
+ //Loads when document is ready and prints coursesinto shopping cart
 
 function getFromLocalStorage() {
     let coursesLS = getCoursesFromStorage();
