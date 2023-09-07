@@ -122,7 +122,10 @@ function clearCart() {
         //Clear from local storage
         clearLocalStorage();
 }
-
+    //Clears from the local storage
+    function clearLocalStorage() {
+        localStorage.clear();
+    }
  //Loads when document is ready and prints coursesinto shopping cart
 
 
