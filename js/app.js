@@ -26,6 +26,7 @@ function loadEventListeners() {
 
 
 
+
 //Functions
 function buyCourse(e) {
     e.preventDefault();
@@ -67,9 +68,7 @@ function addIntoCart(course){
             <td>
                 <a href="#" class="remove" data-id="${course.id}">X</a>
             </td>
-
         </tr>
-
     `;
     //Add into shopping cart
     shoppingCartContent.appendChild(row);
@@ -104,6 +103,7 @@ function getCoursesFromStorage() {
     return courses;
 
 }
+
 //remove course from the DOM
 function removeCourse(e) {
 
@@ -111,8 +111,6 @@ function removeCourse(e) {
         e.target.parentElement.parentElement.remove();
     }
 }
-
-
 //clears the shopping cart
 function clearCart() {
     // shoppingCartContent.innerHTML = '';
@@ -122,8 +120,7 @@ function clearCart() {
     }
 }
 
-
-//Loads when document is ready and prints coursesinto shopping cart
+ //Loads when document is ready and prints coursesinto shopping c art
 
 function getFromLocalStorage() {
     let coursesLS = getCoursesFromStorage();
