@@ -124,9 +124,13 @@ function removeCourseLocalStorage(id) {
     let coursesLS = getCoursesFromStorage();
 
     //loop through the array and find the index to remove
-    coursesLS.forEach(function(coursesLS, index)) {
-        
-    }
+    coursesLS.forEach(function(coursesLS, index) {
+        if(coursesLS.id === id) {
+            coursesLS.splice(index, 1)
+        }
+    });
+
+    console.log(coursesLS)
 }
 //clears the shopping cart
 function clearCart() {
