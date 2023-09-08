@@ -120,7 +120,13 @@ function removeCourse(e) {
 }
 //remove from local storage
 function removeCourseLocalStorage(id) {
-    
+    // get the local storage data
+    let coursesLS = getCoursesFromStorage();
+
+    //loop through the array and find the index to remove
+    coursesLS.forEach(function(coursesLS, index)) {
+        
+    }
 }
 //clears the shopping cart
 function clearCart() {
