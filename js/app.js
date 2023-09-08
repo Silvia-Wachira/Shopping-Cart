@@ -106,10 +106,17 @@ function getCoursesFromStorage() {
 
 //remove course from the DOM
 function removeCourse(e) {
+    let course,courseId;
 
+    //Remove from the dom
     if(e.target.classList.contains('remove')){
         e.target.parentElement.parentElement.remove();
+        course = e.target.parentElement.parentElement
     }
+    console.log(course)
+    //remove from the local storage
+
+
 }
 //clears the shopping cart
 function clearCart() {
