@@ -130,7 +130,8 @@ function removeCourseLocalStorage(id) {
         }
     });
 
-    console.log(coursesLS)
+    //Add the rest of the array
+    localStorage.setItem('courses', JSON.stringify(coursesLS));
 }
 //clears the shopping cart
 function clearCart() {
